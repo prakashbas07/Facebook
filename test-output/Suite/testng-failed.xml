@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)" parallel="methods">
+    <parameter name="pass" value="12354"/>
+    <parameter name="name" value="parakash"/>
+    <classes>
+      <class name="org.test.TestSteps">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterClass"/>
+          <include name="Test3"/>
+          <include name="Test2"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- org.test.TestSteps -->
+      <class name="org.test.TestGroups">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="Test21" invocation-numbers="0"/>
+          <include name="Test11"/>
+          <include name="Test31" invocation-numbers="0"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- org.test.TestGroups -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
